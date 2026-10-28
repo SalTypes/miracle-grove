@@ -1,0 +1,42 @@
+name: Build and check fonts
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/build.py
+      - run: python scripts/build.py --output build/repro-check
+      - run: python scripts/test_fonts.py --compare build/repro-check
+      - run: git diff --exit-code -- fonts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fonts-${{ matrix.os }}
+          path: fonts/
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r requirements-audit.txt
+      - run: python scripts/audit.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fontbakery-report
+          path: build/audit/

@@ -1,0 +1,1665 @@
+<workspace>\outputs\miracle-grove-build\audit-deps\fontbakery\fonts_profile.py:103: UserWarning: Failed to load fontbakery.checks.vendorspecific.googlefonts.glyphsets.shape_languages: No module named 'glyphsets'
+  warnings.warn("Failed to load %s: %s" % (import_path, e))
+Start ... running 932 individual check executions.
+ >> alt_caron
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+    with MiracleGrove-Bold.ttf
+
+    Rationale:
+
+    Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or
+    quotesingle or comma or caron(comb). It should be composed with a
+    distinctive glyph which doesn't look like an apostrophe.
+
+    Source: https://ilovetypography.com/2009/01/24/on-diacritics/
+    http://diacritics.typo.cz/index.php?id=5
+    https://www.typotheque.com/articles/lcaron
+
+    More info: https://github.com/fonttools/fontbakery/issues/3308
+
+    WARN Lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN dcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN tcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+
+    Result: WARN
+
+ >> alt_caron
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+    with MiracleGrove-BoldItalic.ttf
+
+    Rationale:
+
+    Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or
+    quotesingle or comma or caron(comb). It should be composed with a
+    distinctive glyph which doesn't look like an apostrophe.
+
+    Source: https://ilovetypography.com/2009/01/24/on-diacritics/
+    http://diacritics.typo.cz/index.php?id=5
+    https://www.typotheque.com/articles/lcaron
+
+    More info: https://github.com/fonttools/fontbakery/issues/3308
+
+    WARN Lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN dcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN tcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+
+    Result: WARN
+
+ >> alt_caron
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+    with MiracleGrove-Medium.ttf
+
+    Rationale:
+
+    Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or
+    quotesingle or comma or caron(comb). It should be composed with a
+    distinctive glyph which doesn't look like an apostrophe.
+
+    Source: https://ilovetypography.com/2009/01/24/on-diacritics/
+    http://diacritics.typo.cz/index.php?id=5
+    https://www.typotheque.com/articles/lcaron
+
+    More info: https://github.com/fonttools/fontbakery/issues/3308
+
+    WARN Lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN dcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN tcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+
+    Result: WARN
+
+ >> alt_caron
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+    with MiracleGrove-MediumItalic.ttf
+
+    Rationale:
+
+    Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or
+    quotesingle or comma or caron(comb). It should be composed with a
+    distinctive glyph which doesn't look like an apostrophe.
+
+    Source: https://ilovetypography.com/2009/01/24/on-diacritics/
+    http://diacritics.typo.cz/index.php?id=5
+    https://www.typotheque.com/articles/lcaron
+
+    More info: https://github.com/fonttools/fontbakery/issues/3308
+
+    WARN Lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN dcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN tcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+
+    Result: WARN
+
+ >> alt_caron
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+    with MiracleGrove-Regular.ttf
+
+    Rationale:
+
+    Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or
+    quotesingle or comma or caron(comb). It should be composed with a
+    distinctive glyph which doesn't look like an apostrophe.
+
+    Source: https://ilovetypography.com/2009/01/24/on-diacritics/
+    http://diacritics.typo.cz/index.php?id=5
+    https://www.typotheque.com/articles/lcaron
+
+    More info: https://github.com/fonttools/fontbakery/issues/3308
+
+    WARN Lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN dcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN tcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+
+    Result: WARN
+
+ >> alt_caron
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+    with MiracleGrove-RegularItalic.ttf
+
+    Rationale:
+
+    Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or
+    quotesingle or comma or caron(comb). It should be composed with a
+    distinctive glyph which doesn't look like an apostrophe.
+
+    Source: https://ilovetypography.com/2009/01/24/on-diacritics/
+    http://diacritics.typo.cz/index.php?id=5
+    https://www.typotheque.com/articles/lcaron
+
+    More info: https://github.com/fonttools/fontbakery/issues/3308
+
+    WARN Lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN dcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN tcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+
+    Result: WARN
+
+ >> alt_caron
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+    with MiracleGrove-SemiBold.ttf
+
+    Rationale:
+
+    Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or
+    quotesingle or comma or caron(comb). It should be composed with a
+    distinctive glyph which doesn't look like an apostrophe.
+
+    Source: https://ilovetypography.com/2009/01/24/on-diacritics/
+    http://diacritics.typo.cz/index.php?id=5
+    https://www.typotheque.com/articles/lcaron
+
+    More info: https://github.com/fonttools/fontbakery/issues/3308
+
+    WARN Lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN dcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN tcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+
+    Result: WARN
+
+ >> alt_caron
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+    with MiracleGrove-SemiBoldItalic.ttf
+
+    Rationale:
+
+    Lcaron, dcaron, lcaron, tcaron should NOT be composed with quoteright or
+    quotesingle or comma or caron(comb). It should be composed with a
+    distinctive glyph which doesn't look like an apostrophe.
+
+    Source: https://ilovetypography.com/2009/01/24/on-diacritics/
+    http://diacritics.typo.cz/index.php?id=5
+    https://www.typotheque.com/articles/lcaron
+
+    More info: https://github.com/fonttools/fontbakery/issues/3308
+
+    WARN Lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN dcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN lcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+    WARN tcaron is decomposed and therefore could not be checked. Please
+         check manually. [code: decomposed-outline]
+
+    Result: WARN
+
+ >> contour_count
+    Check if each glyph has the recommended amount of contours.
+    with MiracleGrove-Bold.ttf
+
+    Rationale:
+
+    Visually QAing thousands of glyphs by hand is tiring. Most glyphs can
+    only be constructured in a handful of ways. This means a glyph's contour
+    count will only differ slightly amongst different fonts, e.g a 'g' could
+    either be 2 or 3 contours, depending on whether its double story or
+    single story.
+
+    However, a quotedbl should have 2 contours, unless the font belongs to a
+    display family.
+
+    This check currently does not cover variable fonts because there's plenty
+    of alternative ways of constructing glyphs with multiple outlines for
+    each feature in a VarFont. The expected contour count data for this check
+    is currently optimized for the typical construction of glyphs in static
+    fonts.
+
+    More info: https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN This check inspects the glyph outlines and detects the total number
+         of contours in each of them. The expected values are infered from
+         the typical ammounts of contours observed in a large collection of
+         reference font families. The divergences listed below may simply
+         indicate a significantly different design on some of your glyphs. On
+         the other hand, some of these may flag actual bugs in the font such
+         as glyphs mapped to an incorrect codepoint. Please consider
+         reviewing the design and codepoint assignment of these to make sure
+         they are correct.
+
+         The following glyphs do not have the recommended number of contours:
+
+
+          - Glyph name: numbersign    Contours detected: 4    Expected: 2
+
+          - Glyph name: percent   Contours detected: 6    Expected: 4 or 5
+
+          - Glyph name: asterisk  Contours detected: 5    Expected: 1 or 4
+
+          - Glyph name: plus  Contours detected: 2    Expected: 1
+
+          - Glyph name: two   Contours detected: 2    Expected: 1
+
+          - Glyph name: eight Contours detected: 1    Expected: 3
+
+          - Glyph name: E Contours detected: 2    Expected: 1
+
+          - Glyph name: F Contours detected: 2    Expected: 1
+
+          - Glyph name: H Contours detected: 3    Expected: 1
+
+          - Glyph name: K Contours detected: 3    Expected: 1 or 2
+
+          - 319 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         contour-count]
+
+    Result: WARN
+
+ >> contour_count
+    Check if each glyph has the recommended amount of contours.
+    with MiracleGrove-BoldItalic.ttf
+
+    Rationale:
+
+    Visually QAing thousands of glyphs by hand is tiring. Most glyphs can
+    only be constructured in a handful of ways. This means a glyph's contour
+    count will only differ slightly amongst different fonts, e.g a 'g' could
+    either be 2 or 3 contours, depending on whether its double story or
+    single story.
+
+    However, a quotedbl should have 2 contours, unless the font belongs to a
+    display family.
+
+    This check currently does not cover variable fonts because there's plenty
+    of alternative ways of constructing glyphs with multiple outlines for
+    each feature in a VarFont. The expected contour count data for this check
+    is currently optimized for the typical construction of glyphs in static
+    fonts.
+
+    More info: https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN This check inspects the glyph outlines and detects the total number
+         of contours in each of them. The expected values are infered from
+         the typical ammounts of contours observed in a large collection of
+         reference font families. The divergences listed below may simply
+         indicate a significantly different design on some of your glyphs. On
+         the other hand, some of these may flag actual bugs in the font such
+         as glyphs mapped to an incorrect codepoint. Please consider
+         reviewing the design and codepoint assignment of these to make sure
+         they are correct.
+
+         The following glyphs do not have the recommended number of contours:
+
+
+          - Glyph name: numbersign    Contours detected: 4    Expected: 2
+
+          - Glyph name: percent   Contours detected: 6    Expected: 4 or 5
+
+          - Glyph name: asterisk  Contours detected: 5    Expected: 1 or 4
+
+          - Glyph name: plus  Contours detected: 2    Expected: 1
+
+          - Glyph name: two   Contours detected: 2    Expected: 1
+
+          - Glyph name: eight Contours detected: 1    Expected: 3
+
+          - Glyph name: E Contours detected: 2    Expected: 1
+
+          - Glyph name: F Contours detected: 2    Expected: 1
+
+          - Glyph name: H Contours detected: 3    Expected: 1
+
+          - Glyph name: K Contours detected: 3    Expected: 1 or 2
+
+          - 230 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         contour-count]
+
+    Result: WARN
+
+ >> contour_count
+    Check if each glyph has the recommended amount of contours.
+    with MiracleGrove-Medium.ttf
+
+    Rationale:
+
+    Visually QAing thousands of glyphs by hand is tiring. Most glyphs can
+    only be constructured in a handful of ways. This means a glyph's contour
+    count will only differ slightly amongst different fonts, e.g a 'g' could
+    either be 2 or 3 contours, depending on whether its double story or
+    single story.
+
+    However, a quotedbl should have 2 contours, unless the font belongs to a
+    display family.
+
+    This check currently does not cover variable fonts because there's plenty
+    of alternative ways of constructing glyphs with multiple outlines for
+    each feature in a VarFont. The expected contour count data for this check
+    is currently optimized for the typical construction of glyphs in static
+    fonts.
+
+    More info: https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN This check inspects the glyph outlines and detects the total number
+         of contours in each of them. The expected values are infered from
+         the typical ammounts of contours observed in a large collection of
+         reference font families. The divergences listed below may simply
+         indicate a significantly different design on some of your glyphs. On
+         the other hand, some of these may flag actual bugs in the font such
+         as glyphs mapped to an incorrect codepoint. Please consider
+         reviewing the design and codepoint assignment of these to make sure
+         they are correct.
+
+         The following glyphs do not have the recommended number of contours:
+
+
+          - Glyph name: numbersign    Contours detected: 4    Expected: 2
+
+          - Glyph name: percent   Contours detected: 6    Expected: 4 or 5
+
+          - Glyph name: asterisk  Contours detected: 5    Expected: 1 or 4
+
+          - Glyph name: plus  Contours detected: 2    Expected: 1
+
+          - Glyph name: two   Contours detected: 2    Expected: 1
+
+          - Glyph name: eight Contours detected: 1    Expected: 3
+
+          - Glyph name: E Contours detected: 2    Expected: 1
+
+          - Glyph name: F Contours detected: 2    Expected: 1
+
+          - Glyph name: H Contours detected: 3    Expected: 1
+
+          - Glyph name: K Contours detected: 3    Expected: 1 or 2
+
+          - 319 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         contour-count]
+
+    Result: WARN
+
+ >> contour_count
+    Check if each glyph has the recommended amount of contours.
+    with MiracleGrove-MediumItalic.ttf
+
+    Rationale:
+
+    Visually QAing thousands of glyphs by hand is tiring. Most glyphs can
+    only be constructured in a handful of ways. This means a glyph's contour
+    count will only differ slightly amongst different fonts, e.g a 'g' could
+    either be 2 or 3 contours, depending on whether its double story or
+    single story.
+
+    However, a quotedbl should have 2 contours, unless the font belongs to a
+    display family.
+
+    This check currently does not cover variable fonts because there's plenty
+    of alternative ways of constructing glyphs with multiple outlines for
+    each feature in a VarFont. The expected contour count data for this check
+    is currently optimized for the typical construction of glyphs in static
+    fonts.
+
+    More info: https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN This check inspects the glyph outlines and detects the total number
+         of contours in each of them. The expected values are infered from
+         the typical ammounts of contours observed in a large collection of
+         reference font families. The divergences listed below may simply
+         indicate a significantly different design on some of your glyphs. On
+         the other hand, some of these may flag actual bugs in the font such
+         as glyphs mapped to an incorrect codepoint. Please consider
+         reviewing the design and codepoint assignment of these to make sure
+         they are correct.
+
+         The following glyphs do not have the recommended number of contours:
+
+
+          - Glyph name: numbersign    Contours detected: 4    Expected: 2
+
+          - Glyph name: percent   Contours detected: 6    Expected: 4 or 5
+
+          - Glyph name: asterisk  Contours detected: 5    Expected: 1 or 4
+
+          - Glyph name: plus  Contours detected: 2    Expected: 1
+
+          - Glyph name: two   Contours detected: 2    Expected: 1
+
+          - Glyph name: eight Contours detected: 1    Expected: 3
+
+          - Glyph name: E Contours detected: 2    Expected: 1
+
+          - Glyph name: F Contours detected: 2    Expected: 1
+
+          - Glyph name: H Contours detected: 3    Expected: 1
+
+          - Glyph name: K Contours detected: 3    Expected: 1 or 2
+
+          - 230 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         contour-count]
+
+    Result: WARN
+
+ >> contour_count
+    Check if each glyph has the recommended amount of contours.
+    with MiracleGrove-Regular.ttf
+
+    Rationale:
+
+    Visually QAing thousands of glyphs by hand is tiring. Most glyphs can
+    only be constructured in a handful of ways. This means a glyph's contour
+    count will only differ slightly amongst different fonts, e.g a 'g' could
+    either be 2 or 3 contours, depending on whether its double story or
+    single story.
+
+    However, a quotedbl should have 2 contours, unless the font belongs to a
+    display family.
+
+    This check currently does not cover variable fonts because there's plenty
+    of alternative ways of constructing glyphs with multiple outlines for
+    each feature in a VarFont. The expected contour count data for this check
+    is currently optimized for the typical construction of glyphs in static
+    fonts.
+
+    More info: https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN This check inspects the glyph outlines and detects the total number
+         of contours in each of them. The expected values are infered from
+         the typical ammounts of contours observed in a large collection of
+         reference font families. The divergences listed below may simply
+         indicate a significantly different design on some of your glyphs. On
+         the other hand, some of these may flag actual bugs in the font such
+         as glyphs mapped to an incorrect codepoint. Please consider
+         reviewing the design and codepoint assignment of these to make sure
+         they are correct.
+
+         The following glyphs do not have the recommended number of contours:
+
+
+          - Glyph name: numbersign    Contours detected: 4    Expected: 2
+
+          - Glyph name: percent   Contours detected: 6    Expected: 4 or 5
+
+          - Glyph name: asterisk  Contours detected: 5    Expected: 1 or 4
+
+          - Glyph name: plus  Contours detected: 2    Expected: 1
+
+          - Glyph name: two   Contours detected: 2    Expected: 1
+
+          - Glyph name: eight Contours detected: 1    Expected: 3
+
+          - Glyph name: E Contours detected: 2    Expected: 1
+
+          - Glyph name: F Contours detected: 2    Expected: 1
+
+          - Glyph name: H Contours detected: 3    Expected: 1
+
+          - Glyph name: K Contours detected: 3    Expected: 1 or 2
+
+          - 319 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         contour-count]
+
+    Result: WARN
+
+ >> contour_count
+    Check if each glyph has the recommended amount of contours.
+    with MiracleGrove-RegularItalic.ttf
+
+    Rationale:
+
+    Visually QAing thousands of glyphs by hand is tiring. Most glyphs can
+    only be constructured in a handful of ways. This means a glyph's contour
+    count will only differ slightly amongst different fonts, e.g a 'g' could
+    either be 2 or 3 contours, depending on whether its double story or
+    single story.
+
+    However, a quotedbl should have 2 contours, unless the font belongs to a
+    display family.
+
+    This check currently does not cover variable fonts because there's plenty
+    of alternative ways of constructing glyphs with multiple outlines for
+    each feature in a VarFont. The expected contour count data for this check
+    is currently optimized for the typical construction of glyphs in static
+    fonts.
+
+    More info: https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN This check inspects the glyph outlines and detects the total number
+         of contours in each of them. The expected values are infered from
+         the typical ammounts of contours observed in a large collection of
+         reference font families. The divergences listed below may simply
+         indicate a significantly different design on some of your glyphs. On
+         the other hand, some of these may flag actual bugs in the font such
+         as glyphs mapped to an incorrect codepoint. Please consider
+         reviewing the design and codepoint assignment of these to make sure
+         they are correct.
+
+         The following glyphs do not have the recommended number of contours:
+
+
+          - Glyph name: numbersign    Contours detected: 4    Expected: 2
+
+          - Glyph name: percent   Contours detected: 6    Expected: 4 or 5
+
+          - Glyph name: asterisk  Contours detected: 5    Expected: 1 or 4
+
+          - Glyph name: plus  Contours detected: 2    Expected: 1
+
+          - Glyph name: two   Contours detected: 2    Expected: 1
+
+          - Glyph name: eight Contours detected: 1    Expected: 3
+
+          - Glyph name: E Contours detected: 2    Expected: 1
+
+          - Glyph name: F Contours detected: 2    Expected: 1
+
+          - Glyph name: H Contours detected: 3    Expected: 1
+
+          - Glyph name: K Contours detected: 3    Expected: 1 or 2
+
+          - 230 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         contour-count]
+
+    Result: WARN
+
+ >> contour_count
+    Check if each glyph has the recommended amount of contours.
+    with MiracleGrove-SemiBold.ttf
+
+    Rationale:
+
+    Visually QAing thousands of glyphs by hand is tiring. Most glyphs can
+    only be constructured in a handful of ways. This means a glyph's contour
+    count will only differ slightly amongst different fonts, e.g a 'g' could
+    either be 2 or 3 contours, depending on whether its double story or
+    single story.
+
+    However, a quotedbl should have 2 contours, unless the font belongs to a
+    display family.
+
+    This check currently does not cover variable fonts because there's plenty
+    of alternative ways of constructing glyphs with multiple outlines for
+    each feature in a VarFont. The expected contour count data for this check
+    is currently optimized for the typical construction of glyphs in static
+    fonts.
+
+    More info: https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN This check inspects the glyph outlines and detects the total number
+         of contours in each of them. The expected values are infered from
+         the typical ammounts of contours observed in a large collection of
+         reference font families. The divergences listed below may simply
+         indicate a significantly different design on some of your glyphs. On
+         the other hand, some of these may flag actual bugs in the font such
+         as glyphs mapped to an incorrect codepoint. Please consider
+         reviewing the design and codepoint assignment of these to make sure
+         they are correct.
+
+         The following glyphs do not have the recommended number of contours:
+
+
+          - Glyph name: numbersign    Contours detected: 4    Expected: 2
+
+          - Glyph name: percent   Contours detected: 6    Expected: 4 or 5
+
+          - Glyph name: asterisk  Contours detected: 5    Expected: 1 or 4
+
+          - Glyph name: plus  Contours detected: 2    Expected: 1
+
+          - Glyph name: two   Contours detected: 2    Expected: 1
+
+          - Glyph name: eight Contours detected: 1    Expected: 3
+
+          - Glyph name: E Contours detected: 2    Expected: 1
+
+          - Glyph name: F Contours detected: 2    Expected: 1
+
+          - Glyph name: H Contours detected: 3    Expected: 1
+
+          - Glyph name: K Contours detected: 3    Expected: 1 or 2
+
+          - 319 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         contour-count]
+
+    Result: WARN
+
+ >> contour_count
+    Check if each glyph has the recommended amount of contours.
+    with MiracleGrove-SemiBoldItalic.ttf
+
+    Rationale:
+
+    Visually QAing thousands of glyphs by hand is tiring. Most glyphs can
+    only be constructured in a handful of ways. This means a glyph's contour
+    count will only differ slightly amongst different fonts, e.g a 'g' could
+    either be 2 or 3 contours, depending on whether its double story or
+    single story.
+
+    However, a quotedbl should have 2 contours, unless the font belongs to a
+    display family.
+
+    This check currently does not cover variable fonts because there's plenty
+    of alternative ways of constructing glyphs with multiple outlines for
+    each feature in a VarFont. The expected contour count data for this check
+    is currently optimized for the typical construction of glyphs in static
+    fonts.
+
+    More info: https://github.com/fonttools/fontbakery/issues/4829
+
+    WARN This check inspects the glyph outlines and detects the total number
+         of contours in each of them. The expected values are infered from
+         the typical ammounts of contours observed in a large collection of
+         reference font families. The divergences listed below may simply
+         indicate a significantly different design on some of your glyphs. On
+         the other hand, some of these may flag actual bugs in the font such
+         as glyphs mapped to an incorrect codepoint. Please consider
+         reviewing the design and codepoint assignment of these to make sure
+         they are correct.
+
+         The following glyphs do not have the recommended number of contours:
+
+
+          - Glyph name: numbersign    Contours detected: 4    Expected: 2
+
+          - Glyph name: percent   Contours detected: 6    Expected: 4 or 5
+
+          - Glyph name: asterisk  Contours detected: 5    Expected: 1 or 4
+
+          - Glyph name: plus  Contours detected: 2    Expected: 1
+
+          - Glyph name: two   Contours detected: 2    Expected: 1
+
+          - Glyph name: eight Contours detected: 1    Expected: 3
+
+          - Glyph name: E Contours detected: 2    Expected: 1
+
+          - Glyph name: F Contours detected: 2    Expected: 1
+
+          - Glyph name: H Contours detected: 3    Expected: 1
+
+          - Glyph name: K Contours detected: 3    Expected: 1 or 2
+
+          - 230 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         contour-count]
+
+    Result: WARN
+
+ >> math_signs_width
+    Check math signs have the same width.
+    with MiracleGrove-Bold.ttf
+
+    Rationale:
+
+    It is a common practice to have math signs sharing the same width
+    (preferably the same width as tabular figures accross the entire font
+    family).
+
+    This probably comes from the will to avoid additional tabular math signs
+    knowing that their design can easily share the same width.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3832
+
+    WARN The most common width is 1171 among a set of 4 math glyphs. The
+         following math glyphs have a different width, though:
+
+         Width = 1073: less, greater
+
+         Width = 1185: logicalnot
+
+         Width = 1173: plusminus
+
+         Width = 1137: multiply
+
+         Width = 1331: approxequal
+
+         Width = 1178: notequal
+
+         Width = 1170: lessequal, greaterequal [code: width-outliers]
+
+    Result: WARN
+
+ >> math_signs_width
+    Check math signs have the same width.
+    with MiracleGrove-BoldItalic.ttf
+
+    Rationale:
+
+    It is a common practice to have math signs sharing the same width
+    (preferably the same width as tabular figures accross the entire font
+    family).
+
+    This probably comes from the will to avoid additional tabular math signs
+    knowing that their design can easily share the same width.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3832
+
+    WARN The most common width is 1186 among a set of 8 math glyphs. The
+         following math glyphs have a different width, though:
+
+         Width = 1087: less, greater
+
+         Width = 1185: logicalnot
+
+         Width = 1161: multiply
+
+         Width = 1358: approxequal [code: width-outliers]
+
+    Result: WARN
+
+ >> math_signs_width
+    Check math signs have the same width.
+    with MiracleGrove-Medium.ttf
+
+    Rationale:
+
+    It is a common practice to have math signs sharing the same width
+    (preferably the same width as tabular figures accross the entire font
+    family).
+
+    This probably comes from the will to avoid additional tabular math signs
+    knowing that their design can easily share the same width.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3832
+
+    WARN The most common width is 1139 among a set of 4 math glyphs. The
+         following math glyphs have a different width, though:
+
+         Width = 1140: minus, plus
+
+         Width = 1044: less
+
+         Width = 1043: greater
+
+         Width = 1150: logicalnot
+
+         Width = 1141: plusminus
+
+         Width = 1059: multiply
+
+         Width = 1296: approxequal
+
+         Width = 1144: notequal [code: width-outliers]
+
+    Result: WARN
+
+ >> math_signs_width
+    Check math signs have the same width.
+    with MiracleGrove-MediumItalic.ttf
+
+    Rationale:
+
+    It is a common practice to have math signs sharing the same width
+    (preferably the same width as tabular figures accross the entire font
+    family).
+
+    This probably comes from the will to avoid additional tabular math signs
+    knowing that their design can easily share the same width.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3832
+
+    WARN The most common width is 1151 among a set of 9 math glyphs. The
+         following math glyphs have a different width, though:
+
+         Width = 1053: less, greater
+
+         Width = 1076: multiply
+
+         Width = 1316: approxequal [code: width-outliers]
+
+    Result: WARN
+
+ >> math_signs_width
+    Check math signs have the same width.
+    with MiracleGrove-Regular.ttf
+
+    Rationale:
+
+    It is a common practice to have math signs sharing the same width
+    (preferably the same width as tabular figures accross the entire font
+    family).
+
+    This probably comes from the will to avoid additional tabular math signs
+    knowing that their design can easily share the same width.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3832
+
+    WARN The most common width is 1129 among a set of 6 math glyphs. The
+         following math glyphs have a different width, though:
+
+         Width = 1034: less
+
+         Width = 1033: greater
+
+         Width = 1138: logicalnot
+
+         Width = 1130: plusminus
+
+         Width = 1032: multiply
+
+         Width = 1285: approxequal
+
+         Width = 1132: notequal [code: width-outliers]
+
+    Result: WARN
+
+ >> math_signs_width
+    Check math signs have the same width.
+    with MiracleGrove-RegularItalic.ttf
+
+    Rationale:
+
+    It is a common practice to have math signs sharing the same width
+    (preferably the same width as tabular figures accross the entire font
+    family).
+
+    This probably comes from the will to avoid additional tabular math signs
+    knowing that their design can easily share the same width.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3832
+
+    WARN The most common width is 1139 among a set of 9 math glyphs. The
+         following math glyphs have a different width, though:
+
+         Width = 1042: less, greater
+
+         Width = 1048: multiply
+
+         Width = 1302: approxequal [code: width-outliers]
+
+    Result: WARN
+
+ >> math_signs_width
+    Check math signs have the same width.
+    with MiracleGrove-SemiBold.ttf
+
+    Rationale:
+
+    It is a common practice to have math signs sharing the same width
+    (preferably the same width as tabular figures accross the entire font
+    family).
+
+    This probably comes from the will to avoid additional tabular math signs
+    knowing that their design can easily share the same width.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3832
+
+    WARN The most common width is 1155 among a set of 6 math glyphs. The
+         following math glyphs have a different width, though:
+
+         Width = 1059: less
+
+         Width = 1058: greater
+
+         Width = 1168: logicalnot
+
+         Width = 1157: plusminus
+
+         Width = 1098: multiply
+
+         Width = 1314: approxequal
+
+         Width = 1161: notequal [code: width-outliers]
+
+    Result: WARN
+
+ >> math_signs_width
+    Check math signs have the same width.
+    with MiracleGrove-SemiBoldItalic.ttf
+
+    Rationale:
+
+    It is a common practice to have math signs sharing the same width
+    (preferably the same width as tabular figures accross the entire font
+    family).
+
+    This probably comes from the will to avoid additional tabular math signs
+    knowing that their design can easily share the same width.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3832
+
+    WARN The most common width is 1168 among a set of 9 math glyphs. The
+         following math glyphs have a different width, though:
+
+         Width = 1070: less, greater
+
+         Width = 1119: multiply
+
+         Width = 1337: approxequal [code: width-outliers]
+
+    Result: WARN
+
+ >> soft_hyphen
+    Does the font contain a soft hyphen?
+    with MiracleGrove-Bold.ttf
+
+    Rationale:
+
+    The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a
+    hyphenation possibility within a word in the absence of or overriding
+    dictionary hyphenation.
+
+    It is sometimes designed empty with no width (such as a control
+    character), sometimes the same as the traditional hyphen, sometimes
+    double encoded with the hyphen.
+
+    That being said, it is recommended to not include it in the font at all,
+    because discretionary hyphenation should be handled at the level of the
+    shaping engine, not the font. Also, even if present, the software would
+    not display that character.
+
+    More discussion at:
+    https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-ho
+    rizontalbar
+
+    More info: https://github.com/fonttools/fontbakery/issues/4046
+               https://github.com/fonttools/fontbakery/issues/3486
+
+    WARN This font has a 'Soft Hyphen' character. [code: softhyphen]
+
+    Result: WARN
+
+ >> soft_hyphen
+    Does the font contain a soft hyphen?
+    with MiracleGrove-BoldItalic.ttf
+
+    Rationale:
+
+    The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a
+    hyphenation possibility within a word in the absence of or overriding
+    dictionary hyphenation.
+
+    It is sometimes designed empty with no width (such as a control
+    character), sometimes the same as the traditional hyphen, sometimes
+    double encoded with the hyphen.
+
+    That being said, it is recommended to not include it in the font at all,
+    because discretionary hyphenation should be handled at the level of the
+    shaping engine, not the font. Also, even if present, the software would
+    not display that character.
+
+    More discussion at:
+    https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-ho
+    rizontalbar
+
+    More info: https://github.com/fonttools/fontbakery/issues/4046
+               https://github.com/fonttools/fontbakery/issues/3486
+
+    WARN This font has a 'Soft Hyphen' character. [code: softhyphen]
+
+    Result: WARN
+
+ >> soft_hyphen
+    Does the font contain a soft hyphen?
+    with MiracleGrove-Medium.ttf
+
+    Rationale:
+
+    The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a
+    hyphenation possibility within a word in the absence of or overriding
+    dictionary hyphenation.
+
+    It is sometimes designed empty with no width (such as a control
+    character), sometimes the same as the traditional hyphen, sometimes
+    double encoded with the hyphen.
+
+    That being said, it is recommended to not include it in the font at all,
+    because discretionary hyphenation should be handled at the level of the
+    shaping engine, not the font. Also, even if present, the software would
+    not display that character.
+
+    More discussion at:
+    https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-ho
+    rizontalbar
+
+    More info: https://github.com/fonttools/fontbakery/issues/4046
+               https://github.com/fonttools/fontbakery/issues/3486
+
+    WARN This font has a 'Soft Hyphen' character. [code: softhyphen]
+
+    Result: WARN
+
+ >> soft_hyphen
+    Does the font contain a soft hyphen?
+    with MiracleGrove-MediumItalic.ttf
+
+    Rationale:
+
+    The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a
+    hyphenation possibility within a word in the absence of or overriding
+    dictionary hyphenation.
+
+    It is sometimes designed empty with no width (such as a control
+    character), sometimes the same as the traditional hyphen, sometimes
+    double encoded with the hyphen.
+
+    That being said, it is recommended to not include it in the font at all,
+    because discretionary hyphenation should be handled at the level of the
+    shaping engine, not the font. Also, even if present, the software would
+    not display that character.
+
+    More discussion at:
+    https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-ho
+    rizontalbar
+
+    More info: https://github.com/fonttools/fontbakery/issues/4046
+               https://github.com/fonttools/fontbakery/issues/3486
+
+    WARN This font has a 'Soft Hyphen' character. [code: softhyphen]
+
+    Result: WARN
+
+ >> soft_hyphen
+    Does the font contain a soft hyphen?
+    with MiracleGrove-Regular.ttf
+
+    Rationale:
+
+    The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a
+    hyphenation possibility within a word in the absence of or overriding
+    dictionary hyphenation.
+
+    It is sometimes designed empty with no width (such as a control
+    character), sometimes the same as the traditional hyphen, sometimes
+    double encoded with the hyphen.
+
+    That being said, it is recommended to not include it in the font at all,
+    because discretionary hyphenation should be handled at the level of the
+    shaping engine, not the font. Also, even if present, the software would
+    not display that character.
+
+    More discussion at:
+    https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-ho
+    rizontalbar
+
+    More info: https://github.com/fonttools/fontbakery/issues/4046
+               https://github.com/fonttools/fontbakery/issues/3486
+
+    WARN This font has a 'Soft Hyphen' character. [code: softhyphen]
+
+    Result: WARN
+
+ >> soft_hyphen
+    Does the font contain a soft hyphen?
+    with MiracleGrove-RegularItalic.ttf
+
+    Rationale:
+
+    The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a
+    hyphenation possibility within a word in the absence of or overriding
+    dictionary hyphenation.
+
+    It is sometimes designed empty with no width (such as a control
+    character), sometimes the same as the traditional hyphen, sometimes
+    double encoded with the hyphen.
+
+    That being said, it is recommended to not include it in the font at all,
+    because discretionary hyphenation should be handled at the level of the
+    shaping engine, not the font. Also, even if present, the software would
+    not display that character.
+
+    More discussion at:
+    https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-ho
+    rizontalbar
+
+    More info: https://github.com/fonttools/fontbakery/issues/4046
+               https://github.com/fonttools/fontbakery/issues/3486
+
+    WARN This font has a 'Soft Hyphen' character. [code: softhyphen]
+
+    Result: WARN
+
+ >> soft_hyphen
+    Does the font contain a soft hyphen?
+    with MiracleGrove-SemiBold.ttf
+
+    Rationale:
+
+    The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a
+    hyphenation possibility within a word in the absence of or overriding
+    dictionary hyphenation.
+
+    It is sometimes designed empty with no width (such as a control
+    character), sometimes the same as the traditional hyphen, sometimes
+    double encoded with the hyphen.
+
+    That being said, it is recommended to not include it in the font at all,
+    because discretionary hyphenation should be handled at the level of the
+    shaping engine, not the font. Also, even if present, the software would
+    not display that character.
+
+    More discussion at:
+    https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-ho
+    rizontalbar
+
+    More info: https://github.com/fonttools/fontbakery/issues/4046
+               https://github.com/fonttools/fontbakery/issues/3486
+
+    WARN This font has a 'Soft Hyphen' character. [code: softhyphen]
+
+    Result: WARN
+
+ >> soft_hyphen
+    Does the font contain a soft hyphen?
+    with MiracleGrove-SemiBoldItalic.ttf
+
+    Rationale:
+
+    The 'Soft Hyphen' character (codepoint 0x00AD) is used to mark a
+    hyphenation possibility within a word in the absence of or overriding
+    dictionary hyphenation.
+
+    It is sometimes designed empty with no width (such as a control
+    character), sometimes the same as the traditional hyphen, sometimes
+    double encoded with the hyphen.
+
+    That being said, it is recommended to not include it in the font at all,
+    because discretionary hyphenation should be handled at the level of the
+    shaping engine, not the font. Also, even if present, the software would
+    not display that character.
+
+    More discussion at:
+    https://typedrawers.com/discussion/2046/special-dash-things-softhyphen-ho
+    rizontalbar
+
+    More info: https://github.com/fonttools/fontbakery/issues/4046
+               https://github.com/fonttools/fontbakery/issues/3486
+
+    WARN This font has a 'Soft Hyphen' character. [code: softhyphen]
+
+    Result: WARN
+
+ >> unreachable_glyphs
+    Check font contains no unreachable glyphs
+    with MiracleGrove-Bold.ttf
+
+    Rationale:
+
+    Glyphs are either accessible directly through Unicode codepoints or
+    through substitution rules.
+
+    In Color Fonts, glyphs are also referenced by the COLR table. And
+    mathematical fonts also reference glyphs via the MATH table.
+
+    Any glyphs not accessible by these means are redundant and serve only to
+    increase the font's file size.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3160
+
+    WARN The following glyphs could not be reached by codepoint or
+         substitution rules:
+
+
+          - Jacute
+
+          - acute.cap
+
+          - breve.cap
+
+          - breveacute
+
+          - breveacute.cap
+
+          - brevegrave
+
+          - brevegrave.cap
+
+          - brevehook
+
+          - brevehook.cap
+
+          - brevetilde
+
+          - 25 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         unreachable-glyphs]
+
+    Result: WARN
+
+ >> unreachable_glyphs
+    Check font contains no unreachable glyphs
+    with MiracleGrove-BoldItalic.ttf
+
+    Rationale:
+
+    Glyphs are either accessible directly through Unicode codepoints or
+    through substitution rules.
+
+    In Color Fonts, glyphs are also referenced by the COLR table. And
+    mathematical fonts also reference glyphs via the MATH table.
+
+    Any glyphs not accessible by these means are redundant and serve only to
+    increase the font's file size.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3160
+
+    WARN The following glyphs could not be reached by codepoint or
+         substitution rules:
+
+
+          - Jacute
+
+          - acute.cap
+
+          - breve.cap
+
+          - breveacute
+
+          - breveacute.cap
+
+          - brevegrave
+
+          - brevegrave.cap
+
+          - brevehook
+
+          - brevehook.cap
+
+          - brevetilde
+
+          - 28 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         unreachable-glyphs]
+
+    Result: WARN
+
+ >> unreachable_glyphs
+    Check font contains no unreachable glyphs
+    with MiracleGrove-Medium.ttf
+
+    Rationale:
+
+    Glyphs are either accessible directly through Unicode codepoints or
+    through substitution rules.
+
+    In Color Fonts, glyphs are also referenced by the COLR table. And
+    mathematical fonts also reference glyphs via the MATH table.
+
+    Any glyphs not accessible by these means are redundant and serve only to
+    increase the font's file size.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3160
+
+    WARN The following glyphs could not be reached by codepoint or
+         substitution rules:
+
+
+          - Jacute
+
+          - acute.cap
+
+          - breve.cap
+
+          - breveacute
+
+          - breveacute.cap
+
+          - brevegrave
+
+          - brevegrave.cap
+
+          - brevehook
+
+          - brevehook.cap
+
+          - brevetilde
+
+          - 25 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         unreachable-glyphs]
+
+    Result: WARN
+
+ >> unreachable_glyphs
+    Check font contains no unreachable glyphs
+    with MiracleGrove-MediumItalic.ttf
+
+    Rationale:
+
+    Glyphs are either accessible directly through Unicode codepoints or
+    through substitution rules.
+
+    In Color Fonts, glyphs are also referenced by the COLR table. And
+    mathematical fonts also reference glyphs via the MATH table.
+
+    Any glyphs not accessible by these means are redundant and serve only to
+    increase the font's file size.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3160
+
+    WARN The following glyphs could not be reached by codepoint or
+         substitution rules:
+
+
+          - Jacute
+
+          - acute.cap
+
+          - breve.cap
+
+          - breveacute
+
+          - breveacute.cap
+
+          - brevegrave
+
+          - brevegrave.cap
+
+          - brevehook
+
+          - brevehook.cap
+
+          - brevetilde
+
+          - 28 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         unreachable-glyphs]
+
+    Result: WARN
+
+ >> unreachable_glyphs
+    Check font contains no unreachable glyphs
+    with MiracleGrove-Regular.ttf
+
+    Rationale:
+
+    Glyphs are either accessible directly through Unicode codepoints or
+    through substitution rules.
+
+    In Color Fonts, glyphs are also referenced by the COLR table. And
+    mathematical fonts also reference glyphs via the MATH table.
+
+    Any glyphs not accessible by these means are redundant and serve only to
+    increase the font's file size.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3160
+
+    WARN The following glyphs could not be reached by codepoint or
+         substitution rules:
+
+
+          - Jacute
+
+          - acute.cap
+
+          - breve.cap
+
+          - breveacute
+
+          - breveacute.cap
+
+          - brevegrave
+
+          - brevegrave.cap
+
+          - brevehook
+
+          - brevehook.cap
+
+          - brevetilde
+
+          - 25 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         unreachable-glyphs]
+
+    Result: WARN
+
+ >> unreachable_glyphs
+    Check font contains no unreachable glyphs
+    with MiracleGrove-RegularItalic.ttf
+
+    Rationale:
+
+    Glyphs are either accessible directly through Unicode codepoints or
+    through substitution rules.
+
+    In Color Fonts, glyphs are also referenced by the COLR table. And
+    mathematical fonts also reference glyphs via the MATH table.
+
+    Any glyphs not accessible by these means are redundant and serve only to
+    increase the font's file size.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3160
+
+    WARN The following glyphs could not be reached by codepoint or
+         substitution rules:
+
+
+          - Jacute
+
+          - acute.cap
+
+          - breve.cap
+
+          - breveacute
+
+          - breveacute.cap
+
+          - brevegrave
+
+          - brevegrave.cap
+
+          - brevehook
+
+          - brevehook.cap
+
+          - brevetilde
+
+          - 28 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         unreachable-glyphs]
+
+    Result: WARN
+
+ >> unreachable_glyphs
+    Check font contains no unreachable glyphs
+    with MiracleGrove-SemiBold.ttf
+
+    Rationale:
+
+    Glyphs are either accessible directly through Unicode codepoints or
+    through substitution rules.
+
+    In Color Fonts, glyphs are also referenced by the COLR table. And
+    mathematical fonts also reference glyphs via the MATH table.
+
+    Any glyphs not accessible by these means are redundant and serve only to
+    increase the font's file size.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3160
+
+    WARN The following glyphs could not be reached by codepoint or
+         substitution rules:
+
+
+          - Jacute
+
+          - acute.cap
+
+          - breve.cap
+
+          - breveacute
+
+          - breveacute.cap
+
+          - brevegrave
+
+          - brevegrave.cap
+
+          - brevehook
+
+          - brevehook.cap
+
+          - brevetilde
+
+          - 25 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         unreachable-glyphs]
+
+    Result: WARN
+
+ >> unreachable_glyphs
+    Check font contains no unreachable glyphs
+    with MiracleGrove-SemiBoldItalic.ttf
+
+    Rationale:
+
+    Glyphs are either accessible directly through Unicode codepoints or
+    through substitution rules.
+
+    In Color Fonts, glyphs are also referenced by the COLR table. And
+    mathematical fonts also reference glyphs via the MATH table.
+
+    Any glyphs not accessible by these means are redundant and serve only to
+    increase the font's file size.
+
+    More info: https://github.com/fonttools/fontbakery/issues/3160
+
+    WARN The following glyphs could not be reached by codepoint or
+         substitution rules:
+
+
+          - Jacute
+
+          - acute.cap
+
+          - breve.cap
+
+          - breveacute
+
+          - breveacute.cap
+
+          - brevegrave
+
+          - brevegrave.cap
+
+          - brevehook
+
+          - brevehook.cap
+
+          - brevetilde
+
+          - 28 more.
+
+
+         Use -F or --full-lists to disable shortening of long lists. [code:
+         unreachable-glyphs]
+
+    Result: WARN
+
+
+Total:
+    ERROR: 0
+    FATAL: 0
+    FAIL: 0
+    WARN: 40
+    INFO: 30
+    SKIP: 298
+    PASS: 564
+
+
+
+    Meaning of check results:
+
+    An ERROR is something wrong with FontBakery itself, possibly a bug.
+    A  FATAL is an extremely severe issue that must be addressed immediately.
+    A  FAIL is a problem with the font that must be fixed.
+    A  WARN is something that you should consider addressing.
+    An INFO result simply prints something useful. Typically stats.
+    A  PASS means the font looks good for the given checking routine.
+And a  SKIP happens when the check does not apply to the given font.
+
+    If you get ERRORs, please help us improve the tool by reporting them at
+    https://github.com/fonttools/fontbakery/issues (but other kinds of bug
+    reports and/or feature requests are also always welcome, of course!)
+
+
+
+
+                           ,@.
+                         ,@.@@,.
+                   ,@@,.@@@.  @.@@@,.
+                 ,@@. @@@.     @@. @@,.
+         ,@@@.@,.@.              @.  @@@@,.@.@@,.
+    ,@@.@.     @@.@@.            @,.    .@’ @’  @@,
+  ,@@. @.          .@@.@@@.  @@’                  @,
+ ,@.  @@.                                          @,
+ @.     @,@@,.     ,                             .@@,
+ @,.       .@,@@,.         .@@,.  ,       .@@,  @, @,
+ @.                             .@. @ @@,.    ,      @
+  @,.@@.     @,.      @@,.      @.           @,.    @’
+   @@||@,.  @’@,.       @@,.  @@ @,.        @’@@,  @’
+      \\@@@@’  @,.      @’@@@@’   @@,.   @@@’ //@@@’
+       |||||||| @@,.  @@’ |||||||  |@@@|@||  ||
+        \\\\\\\  ||@@@||  |||||||  |||||||  //
+         |||||||  ||||||  ||||||   ||||||  ||
+          \\\\\\  ||||||  ||||||  ||||||  //
+           ||||||  |||||  |||||   |||||  ||
+            \\\\\  |||||  |||||  |||||  //
+             |||||  ||||  |||||  ||||  ||
+              \\\\  ||||  ||||  ||||  //
+               ||||||||||||||||||||||||
+
+         No check is failing. Get a cupcake!
+       <<Art by Tony de Marco, July 26, 2018>>
+
+DONE!
+A report in JSON format has been saved to "<workspace>\outputs\saltypes-public\miracle-grove\build\audit\fontbakery.json"

@@ -1,0 +1,12 @@
+Original Fraunces typeface
+The Fraunces Project Authors
+Undercase Type: Phaedra Charles and Flavia Zimbardi
+https://github.com/undercasetype/Fraunces
+
+Miracle Grove derivative
+Maintained by Salman Ravoof through SalTypes
+https://github.com/SalTypes
+
+Development and testing assisted by OpenAI Codex.
+Original designers do not endorse this derivative.
+See OFL.txt for the copyright notice and license.

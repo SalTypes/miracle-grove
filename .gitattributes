@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.ttf binary
+*.woff2 binary
+*.png binary
+*.zip binary
+OFL.txt -text -whitespace
+upstream/OFL.txt -text -whitespace
