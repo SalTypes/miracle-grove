@@ -32,7 +32,7 @@ Use weights **400**, **500**, **600**, or **700**. Set `font-style: italic` for 
 
 ## What you get
 
-| Detail | Release 1.100 |
+| Detail | Release 1.200 |
 |---|---|
 | Styles | Regular, Medium, SemiBold, Bold, with matching italics |
 | Formats | Static TrueType and WOFF2 |
@@ -48,7 +48,9 @@ Miracle Grove began as a companion to lettering explored for Animal Miracles. Th
 
 The font adapts [Fraunces by Undercase Type](https://github.com/undercasetype/Fraunces), designed by Phaedra Charles and Flavia Zimbardi. Most of the underlying letterforms remain theirs.
 
-This edition selects a fixed optical size and softness. It adds a returning foot to the upright **l**, extends that change to **ł**, and adjusts related characters.
+This edition selects a fixed optical size and softness. The returning upright **l** now accompanies an arched **A** bridge and refinements to selected shoulders, legs, and terminals.
+
+Version **1.200** gives the italic **l** an angled cap and reduces the bulbs of **f**. Related accents and ligatures follow those changes.
 
 Tabular figures and ligature caret positions extend its typesetting features. [The design notes](documentation/design.md) explain what this edition inherits from Fraunces.
 

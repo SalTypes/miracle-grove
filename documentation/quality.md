@@ -1,6 +1,6 @@
 # What has been tested
 
-Release **1.100** passed FontBakery's Universal profile with **564 passes**, **0 failures**, and **0 errors** on Windows with Python 3.13.
+Release **1.200** passed FontBakery's Universal profile with **564 passes**, **0 failures**, and **0 errors** on Windows with Python 3.13.
 
 The run also produced **40 warnings**, **298 skipped checks**, and **30 informational results**. A skipped check does not count as a pass.
 
@@ -30,7 +30,7 @@ Two local builds produced byte-identical font files. The repository's CI repeats
 
 ## Check browser behavior
 
-The refined fonts loaded in Microsoft Edge on Windows. The earlier test specimen passed horizontal-overflow checks at **320**, **768**, and **1440 pixels**.
+For release **1.100**, the fonts loaded in Microsoft Edge on Windows. That earlier test specimen passed horizontal-overflow checks at **320**, **768**, and **1440 pixels**.
 
 Each width was tested with ordinary spacing and expanded text spacing. The test used **48px** font samples and loaded all eight styles.
 

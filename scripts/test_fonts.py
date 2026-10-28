@@ -13,7 +13,7 @@ def check_fonts(directory,compare=None):
   f=TTFont(path,checkChecksums=2);cmap=f.getBestCmap()
   assert len(cmap)==639 and len(f.getGlyphOrder())==710
   assert all(t in f for t in ('GPOS','GSUB','GDEF','STAT')) and 'fvar' not in f
-  assert f['OS/2'].fsType==0 and f['name'].getDebugName(5)=='Version 1.100'
+  assert f['OS/2'].fsType==0 and f['name'].getDebugName(5)=='Version 1.200'
   ps=f['name'].getDebugName(6);assert ps not in names;names.add(ps)
   cmaps.append(set(cmap));metrics.append(tuple(getattr(f['OS/2'],k) for k in ('sTypoAscender','sTypoDescender','sTypoLineGap','usWinAscent','usWinDescent')))
   for gn in f.getGlyphOrder():

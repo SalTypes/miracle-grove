@@ -1,6 +1,6 @@
 # How Miracle Grove differs from Fraunces
 
-Miracle Grove is a modified Fraunces family. Its main design contribution is the upright lowercase **l** and the related character adjustments.
+Miracle Grove is a modified Fraunces family. Its refinements began with the upright lowercase **l** and now extend to selected capitals, lowercase forms, and italics.
 
 The alphabet, italics, and kerning largely come from Fraunces. This project does not claim that the full typeface was drawn from scratch.
 
@@ -28,9 +28,25 @@ The **lj** digraph needs more than a wider advance. Its **j** is moved to follow
 
 The upright **ł** combines the new **l** with a crossing stroke. It should receive native-reader review before substantial Polish-language use.
 
+## Refinements in 1.200
+
+The approved Animal Miracles lettering informed the gently arched **A** bridge. Its midpoint is slightly thinner than its ends.
+
+A shallower central valley softens **M**. The **h**, **m**, and **n** shoulders have a gentler lean.
+
+Curved legs give **K** and **R** a restrained sweep. **Q** has a lifted tail, while **r** has a lighter terminal.
+
+The crossbar of **e** has a shallow curve that echoes **A**. Existing advances and kerning remain in place.
+
+The italic **l** replaces its hooked entrance with a softly angled cap. Slashed **ł** uses the revised stem and the inherited crossing stroke.
+
+The italic **f** keeps its identifying hook with reduced terminal bulbs. Composite accents and standard ligatures inherit the changed outlines.
+
+These italics remain based on Fraunces. The existing expressive alternates retain their earlier shapes and can differ from the revised default letters.
+
 ## Added behavior
 
-Tabular figures center the existing numerals within equal advances. The digit shapes stay unchanged, and number columns become easier to align.
+Tabular figures place the existing numerals in the middle of equal advances. The digit shapes stay unchanged, and number columns become easier to align.
 
 The `tnum` feature selects these numerals. The `pnum` feature restores proportional figures.
 

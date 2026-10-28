@@ -9,14 +9,15 @@ from pathlib import Path
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 from fontTools.pens.ttGlyphPen import TTGlyphPen
-from fontTools.pens.recordingPen import DecomposingRecordingPen
+from fontTools.pens.transformPen import TransformPen
+from fontTools.pens.recordingPen import DecomposingRecordingPen, RecordingPen
 from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
 from fontTools.otlLib.builder import buildStatTable
 from fontTools.ttLib.tables import otTables
 from fontTools import agl
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.100"
+VERSION = "1.200"
 # Fixed OpenType epoch timestamp (2026-10-27 00:00:00 UTC) for reproducible output.
 BUILD_TIMESTAMP = 3875904000
 STYLES = [("Regular",400,450),("Medium",500,550),("SemiBold",600,650),("Bold",700,750)]
@@ -57,7 +58,7 @@ def make_base(label, weight, sourceweight, italic):
     if italic: legacystyle='Bold Italic' if label=='Bold' else 'Italic'
     full=family+' '+style;ps=full.replace(' ','')
     vals={1:legacyfamily,2:legacystyle,3:'1.000;AM;'+ps,4:full,5:'Version 1.000',6:ps,16:family,17:style,
-     10:'Animal Miracles companion family derived from Fraunces. Fixed softness and optical size; custom upright lowercase l. Not an exact reconstruction of the image-generated logo.'}
+     10:'Animal Miracles companion family derived from Fraunces. Fixed softness and optical size; refined upright letterforms and italic l and f. Not an exact reconstruction of the image-generated logo.'}
     for nid in [1,2,3,4,5,6,16,17,10,18,21,22,25]: names.removeNames(nameID=nid)
     for nid,value in vals.items():
      names.setName(value,nid,3,1,0x409);names.setName(value,nid,1,0,0)
@@ -90,12 +91,101 @@ def append_substitution(f,tag,mapping):
    if lang.ReqFeatureIndex!=65535:lang.ReqFeatureIndex=remap[lang.ReqFeatureIndex]
  table.FeatureList.FeatureRecord=newrecords;table.FeatureList.FeatureCount=len(newrecords)
 
+def refine_alphabet(f):
+    """Logo-led upright refinements; retain spacing and existing curve topology."""
+    for gn in ('M','h','m','n','r','Q'):
+        g=f['glyf'][gn]
+        assert not g.isComposite(), gn
+        coords=list(g.coordinates)
+        start=0
+        for contour,end in enumerate(g.endPtsOfContours):
+            for i in range(start,end+1):
+                x,y=coords[i];dx=dy=0
+                if gn=='M':
+                    # Lift the rounded central valley, fading before the stems.
+                    center=f['hmtx'][gn][0]/2
+                    influence=max(0,1-abs(x-center)/350)
+                    dy=110*influence*max(0,1-y/850)
+                elif gn in ('h','m','n') and contour>0:
+                    # Ease the leaning right stem into a more upright shoulder.
+                    pts=coords[start:end+1]
+                    right=max(px for px,py in pts)
+                    influence=max(0,min(1,(x-(right-550))/300))
+                    dx=32*influence*max(0,min(1,(y-250)/400))
+                elif gn=='r' and contour==0:
+                    # Open space below the terminal without changing its reach.
+                    right=max(px for px,py in coords[start:end+1])
+                    influence=max(0,min(1,(x-(right-380))/220))
+                    dy=48*influence*max(0,min(1,(975-y)/450))
+                elif gn=='Q' and contour==2:
+                    # Let the tail turn upward, echoing the returning l foot.
+                    dx=0;dy=55*max(0,min(1,(x-1100)/400))
+                g.coordinates[i]=(round(x+dx),round(y+dy))
+            start=end+1
+    for gn in ('K','R','e'):
+        rec=RecordingPen();f.getGlyphSet()[gn].draw(rec)
+        p=TTGlyphPen(None);current=None;contour=-1
+        for op,args in rec.value:
+            if op=='moveTo':contour+=1
+            target=args[-1] if args else None
+            if op=='lineTo' and current is not None:
+                x,y=current;tx,ty=target
+                if gn in ('K','R') and contour==1 and abs(ty-y)>250:
+                    # Parallel bowed edges give the leg a restrained sweep.
+                    p.qCurveTo(((x+tx)/2-65,(y+ty)/2),target)
+                elif gn=='e' and abs(ty-y)<2 and abs(tx-x)>250 and 350<y<650:
+                    p.qCurveTo(((x+tx)/2,y+36),target)
+                else:p.lineTo(target)
+            else:getattr(p,op)(*args)
+            if target is not None:current=target
+        f['glyf'][gn]=p.glyph()
+
 def refine_font(f):
     italic=bool(f['OS/2'].fsSelection&1);cmap=f.getBestCmap()
     def encode(cp,gn):
      for t in f['cmap'].tables:
       if t.isUnicode() and (cp<=65535 or t.format in (12,13)):t.cmap[cp]=gn
+    if italic:
+     # Replace the looped l entrance with an angled, softly rounded stem cap.
+     rec=RecordingPen();f.getGlyphSet()['l'].draw(rec)
+     assert rec.value[6][0]=='lineTo' and rec.value[13][0]=='lineTo'
+     right=rec.value[5][1][-1];left=rec.value[13][1][0]
+     slope=(right[0]-rec.value[6][1][0][0])/(right[1]-rec.value[6][1][0][1])
+     top=1440;rx=right[0]+slope*(top-right[1]);lx=left[0]+slope*(top-left[1])
+     p=TTGlyphPen(None);p.moveTo((rx,top-45));p.lineTo(right)
+     tail=RecordingPen();tail.value=rec.value[6:14];tail.replay(p)
+     p.lineTo((lx-12,top-110));p.qCurveTo((lx-18,top-65),(lx+20,top-53))
+     p.lineTo((rx-60,top+8));p.qCurveTo((rx+13,top+29),(rx,top-45));p.closePath()
+     f['glyf']['l']=p.glyph()
+     slash=RecordingPen();f.getGlyphSet()['lslash'].draw(slash)
+     split=next(i for i,(op,_) in enumerate(slash.value) if op=='closePath')+1
+     offset=slash.value[split][1][0][0]-rec.value[0][1][0][0]
+     p=TTGlyphPen(None);stroke=RecordingPen();stroke.value=slash.value[:split];stroke.replay(p)
+     f.getGlyphSet()['l'].draw(TransformPen(p,(1,0,0,1,offset,0)))
+     f['glyf']['lslash']=p.glyph()
+     # Keep f's identifying hook, but reduce its bulb and waist swell.
+     g=f['glyf']['f']
+     for i,(x,y) in enumerate(list(g.coordinates)):
+      if y<0:x-=round(max(0,x-60)*.24*min(1,-y/140))
+      if y>1150:x-=round(max(0,x-600)*.16)
+      if 880<y<1120 and 450<x<650:x-=round(26*(1-abs(y-1000)/120))
+      g.coordinates[i]=(x,y)
     if not italic:
+     refine_alphabet(f)
+     # The approved wordmark has an arched, lightly tapered A bridge.
+     # Edit the base before decomposing so accented A forms inherit it.
+     rec=RecordingPen();f.getGlyphSet()['A'].draw(rec)
+     assert [op for op,_ in rec.value[:5]] == ['moveTo','lineTo','lineTo','lineTo','closePath']
+     tl,tr,br,bl=[args[0] for _,args in rec.value[:4]]
+     assert tl[1]==tr[1] and bl[1]==br[1]
+     thickness=tl[1]-bl[1];rise=42;trim=round(thickness*.08)
+     p=TTGlyphPen(None);p.moveTo(tl)
+     p.qCurveTo(((tl[0]+tr[0])/2,tl[1]+2*rise),tr)
+     p.lineTo(br)
+     p.qCurveTo(((bl[0]+br[0])/2,bl[1]+2*(rise+trim)),bl)
+     p.closePath()
+     tail=RecordingPen();tail.value=rec.value[5:];tail.replay(p)
+     f['glyf']['A']=p.glyph()
      g=f['glyf']['lj'];old_l_width=g.components[1].x
      g.components[1].x+=f['hmtx']['l'][0]-old_l_width
      # Slashed l keeps the new foot and a generous, distinct crossing stroke.
@@ -138,9 +228,9 @@ def refine_font(f):
     f['name'].names=[n for n in f['name'].names if n.platformID!=1]
     style=f['name'].getDebugName(17)
     if style=='Regular Italic':f['name'].setName('Italic',17,3,1,0x409)
-    f['name'].setName('Version 1.100',5,3,1,0x409)
-    f['name'].setName('1.100;AM;'+f['name'].getDebugName(6),3,3,1,0x409)
-    f['head'].fontRevision=1.1
+    f['name'].setName('Version '+VERSION,5,3,1,0x409)
+    f['name'].setName(VERSION+';AM;'+f['name'].getDebugName(6),3,3,1,0x409)
+    f['head'].fontRevision=float(VERSION)
     weight=f['OS/2'].usWeightClass
     buildStatTable(f,[dict(tag='wght',name='Weight',ordering=0,values=[dict(value=weight,name={400:'Regular',500:'Medium',600:'SemiBold',700:'Bold'}[weight],flags=2 if weight==400 else 0)]),dict(tag='ital',name='Italic',ordering=1,values=[dict(value=int(italic),name='Italic' if italic else 'Roman',flags=0 if italic else 2,**({} if italic else {'linkedValue':1}))])])
     f['name'].names=[n for n in f['name'].names if n.platformID!=1]
@@ -167,7 +257,7 @@ def build(output):
                 font.save(path)
                 manifest[str(path.relative_to(output)).replace("\\", "/")] = hashlib.sha256(path.read_bytes()).hexdigest()
             style = "italic" if italic else "normal"
-            css.append(f'@font-face {{\n  font-family: "Miracle Grove";\n  src: url("{filename}.woff2") format("woff2");\n  font-weight: {weight};\n  font-style: {style};\n  font-display: swap;\n}}')
+            css.append(f'@font-face {{\n  font-family: "Miracle Grove";\n  src: url("{filename}.woff2?v={VERSION}") format("woff2");\n  font-weight: {weight};\n  font-style: {style};\n  font-display: swap;\n}}')
     (output / "web/miracle-grove.css").write_text("\n\n".join(css)+"\n", encoding="utf-8")
     (output / "SHA256SUMS.json").write_text(json.dumps(manifest, indent=2)+"\n")
     print(f"Built {len(manifest)} font files in {output}")

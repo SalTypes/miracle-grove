@@ -1,4 +1,4 @@
-<workspace>\outputs\miracle-grove-build\audit-deps\fontbakery\fonts_profile.py:103: UserWarning: Failed to load fontbakery.checks.vendorspecific.googlefonts.glyphsets.shape_languages: No module named 'glyphsets'
+C:\Users\Lenovo\.codex\.chatgpt-projects\g-p-6ad09a09f29c81919b29902475dece7d\outputs\miracle-grove-build\audit-deps\fontbakery\fonts_profile.py:103: UserWarning: Failed to load fontbakery.checks.vendorspecific.googlefonts.glyphsets.shape_languages: No module named 'glyphsets'
   warnings.warn("Failed to load %s: %s" % (import_path, e))
 Start ... running 932 individual check executions.
  >> alt_caron
@@ -747,7 +747,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1171 among a set of 4 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1073: less, greater
+         Width = 1073: greater, less
 
          Width = 1185: logicalnot
 
@@ -781,7 +781,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1186 among a set of 8 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1087: less, greater
+         Width = 1087: greater, less
 
          Width = 1185: logicalnot
 
@@ -809,7 +809,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1139 among a set of 4 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1140: minus, plus
+         Width = 1140: plus, minus
 
          Width = 1044: less
 
@@ -845,7 +845,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1151 among a set of 9 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1053: less, greater
+         Width = 1053: greater, less
 
          Width = 1076: multiply
 
@@ -905,7 +905,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1139 among a set of 9 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1042: less, greater
+         Width = 1042: greater, less
 
          Width = 1048: multiply
 
@@ -965,7 +965,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1168 among a set of 9 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1070: less, greater
+         Width = 1070: greater, less
 
          Width = 1119: multiply
 
@@ -1662,4 +1662,4 @@ And a  SKIP happens when the check does not apply to the given font.
        <<Art by Tony de Marco, July 26, 2018>>
 
 DONE!
-A report in JSON format has been saved to "<workspace>\outputs\saltypes-public\miracle-grove\build\audit\fontbakery.json"
+A report in JSON format has been saved to "<workspace>\build\audit\fontbakery.json"

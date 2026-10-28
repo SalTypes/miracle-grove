@@ -18350,7 +18350,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-Bold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 173.3kb |\n | Hinted Size   | 173.3kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-Bold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 173.8kb |\n | Hinted Size   | 173.8kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -18382,7 +18382,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-BoldItalic.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 196.8kb |\n | Hinted Size   | 196.8kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-BoldItalic.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 196.4kb |\n | Hinted Size   | 196.5kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -18414,7 +18414,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-Medium.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 173.3kb |\n | Hinted Size   | 173.3kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-Medium.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 173.7kb |\n | Hinted Size   | 173.8kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -18446,7 +18446,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-MediumItalic.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 197.0kb |\n | Hinted Size   | 197.0kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-MediumItalic.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 196.6kb |\n | Hinted Size   | 196.6kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -18478,7 +18478,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-Regular.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 173.2kb |\n | Hinted Size   | 173.2kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-Regular.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 173.6kb |\n | Hinted Size   | 173.7kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -18510,7 +18510,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-RegularItalic.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 196.8kb |\n | Hinted Size   | 196.8kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-RegularItalic.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 196.4kb |\n | Hinted Size   | 196.4kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -18542,7 +18542,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-SemiBold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 173.4kb |\n | Hinted Size   | 173.4kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-SemiBold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 173.9kb |\n | Hinted Size   | 173.9kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -18574,7 +18574,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-SemiBoldItalic.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 197.0kb |\n | Hinted Size   | 197.1kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | fonts\\ttf\\MiracleGrove-SemiBoldItalic.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 196.7kb |\n | Hinted Size   | 196.7kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -20662,7 +20662,7 @@
                         {
                             "message": {
                                 "code": "width-outliers",
-                                "message": "The most common width is 1171 among a set of 4 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1073:\nless, greater\n\nWidth = 1185:\nlogicalnot\n\nWidth = 1173:\nplusminus\n\nWidth = 1137:\nmultiply\n\nWidth = 1331:\napproxequal\n\nWidth = 1178:\nnotequal\n\nWidth = 1170:\nlessequal, greaterequal\n"
+                                "message": "The most common width is 1171 among a set of 4 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1073:\ngreater, less\n\nWidth = 1185:\nlogicalnot\n\nWidth = 1173:\nplusminus\n\nWidth = 1137:\nmultiply\n\nWidth = 1331:\napproxequal\n\nWidth = 1178:\nnotequal\n\nWidth = 1170:\nlessequal, greaterequal\n"
                             },
                             "status": "WARN"
                         }
@@ -20694,7 +20694,7 @@
                         {
                             "message": {
                                 "code": "width-outliers",
-                                "message": "The most common width is 1186 among a set of 8 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1087:\nless, greater\n\nWidth = 1185:\nlogicalnot\n\nWidth = 1161:\nmultiply\n\nWidth = 1358:\napproxequal\n"
+                                "message": "The most common width is 1186 among a set of 8 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1087:\ngreater, less\n\nWidth = 1185:\nlogicalnot\n\nWidth = 1161:\nmultiply\n\nWidth = 1358:\napproxequal\n"
                             },
                             "status": "WARN"
                         }
@@ -20726,7 +20726,7 @@
                         {
                             "message": {
                                 "code": "width-outliers",
-                                "message": "The most common width is 1139 among a set of 4 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1140:\nminus, plus\n\nWidth = 1044:\nless\n\nWidth = 1043:\ngreater\n\nWidth = 1150:\nlogicalnot\n\nWidth = 1141:\nplusminus\n\nWidth = 1059:\nmultiply\n\nWidth = 1296:\napproxequal\n\nWidth = 1144:\nnotequal\n"
+                                "message": "The most common width is 1139 among a set of 4 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1140:\nplus, minus\n\nWidth = 1044:\nless\n\nWidth = 1043:\ngreater\n\nWidth = 1150:\nlogicalnot\n\nWidth = 1141:\nplusminus\n\nWidth = 1059:\nmultiply\n\nWidth = 1296:\napproxequal\n\nWidth = 1144:\nnotequal\n"
                             },
                             "status": "WARN"
                         }
@@ -20758,7 +20758,7 @@
                         {
                             "message": {
                                 "code": "width-outliers",
-                                "message": "The most common width is 1151 among a set of 9 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1053:\nless, greater\n\nWidth = 1076:\nmultiply\n\nWidth = 1316:\napproxequal\n"
+                                "message": "The most common width is 1151 among a set of 9 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1053:\ngreater, less\n\nWidth = 1076:\nmultiply\n\nWidth = 1316:\napproxequal\n"
                             },
                             "status": "WARN"
                         }
@@ -20822,7 +20822,7 @@
                         {
                             "message": {
                                 "code": "width-outliers",
-                                "message": "The most common width is 1139 among a set of 9 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1042:\nless, greater\n\nWidth = 1048:\nmultiply\n\nWidth = 1302:\napproxequal\n"
+                                "message": "The most common width is 1139 among a set of 9 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1042:\ngreater, less\n\nWidth = 1048:\nmultiply\n\nWidth = 1302:\napproxequal\n"
                             },
                             "status": "WARN"
                         }
@@ -20886,7 +20886,7 @@
                         {
                             "message": {
                                 "code": "width-outliers",
-                                "message": "The most common width is 1168 among a set of 9 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1070:\nless, greater\n\nWidth = 1119:\nmultiply\n\nWidth = 1337:\napproxequal\n"
+                                "message": "The most common width is 1168 among a set of 9 math glyphs.\nThe following math glyphs have a different width, though:\n\nWidth = 1070:\ngreater, less\n\nWidth = 1119:\nmultiply\n\nWidth = 1337:\napproxequal\n"
                             },
                             "status": "WARN"
                         }
