@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.300 · 2026-10-28
+
+- Shortened the upright l foot and reduced its advance by 105 font units.
+- Added kerning around l and its accented forms, including slashed l.
+- Extended outgoing adjustments to fl and ffl ligatures.
+- Added spacing checks for accents, ligatures, and positive outline clearance.
+- Preserved italic outlines and refreshed the spacing proof.
+
 ## 1.200 · 2026-10-28
 
 - Arched the upright A bridge and raised the M center.

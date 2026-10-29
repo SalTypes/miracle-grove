@@ -2,10 +2,10 @@
 import hashlib,zipfile
 from pathlib import Path
 from test_fonts import check_fonts
-ROOT=Path(__file__).resolve().parents[1];check_fonts(ROOT/'fonts');out=ROOT/'dist';out.mkdir(exist_ok=True);archive=out/'Miracle-Grove-1.200.zip'
+ROOT=Path(__file__).resolve().parents[1];check_fonts(ROOT/'fonts');out=ROOT/'dist';out.mkdir(exist_ok=True);archive=out/'Miracle-Grove-1.300.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
  files=[(p,p.relative_to(ROOT/'fonts')) for p in (ROOT/'fonts').rglob('*') if p.is_file()]
- files += [(ROOT/n,Path(n)) for n in ('OFL.txt','AUTHORS.txt','README.md','CHANGELOG.md')]
+ files += [(ROOT/n,Path(n)) for n in ('OFL.txt','AUTHORS.txt','README.md','CHANGELOG.md','spacing-proof.html')]
  files += [(p,p.relative_to(ROOT)) for p in (ROOT/'documentation').glob('*') if p.is_file()]
  files += [(p,p.relative_to(ROOT)) for p in (ROOT/'qa').glob('*') if p.is_file()]
  for path,name in sorted(files,key=lambda pair:str(pair[1])):

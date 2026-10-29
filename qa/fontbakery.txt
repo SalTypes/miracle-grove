@@ -747,7 +747,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1171 among a set of 4 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1073: greater, less
+         Width = 1073: less, greater
 
          Width = 1185: logicalnot
 
@@ -781,7 +781,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1186 among a set of 8 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1087: greater, less
+         Width = 1087: less, greater
 
          Width = 1185: logicalnot
 
@@ -845,7 +845,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1151 among a set of 9 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1053: greater, less
+         Width = 1053: less, greater
 
          Width = 1076: multiply
 
@@ -905,7 +905,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1139 among a set of 9 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1042: greater, less
+         Width = 1042: less, greater
 
          Width = 1048: multiply
 
@@ -965,7 +965,7 @@ Start ... running 932 individual check executions.
     WARN The most common width is 1168 among a set of 9 math glyphs. The
          following math glyphs have a different width, though:
 
-         Width = 1070: greater, less
+         Width = 1070: less, greater
 
          Width = 1119: multiply
 

@@ -36,13 +36,27 @@ A shallower central valley softens **M**. The **h**, **m**, and **n** shoulders 
 
 Curved legs give **K** and **R** a restrained sweep. **Q** has a lifted tail, while **r** has a lighter terminal.
 
-The crossbar of **e** has a shallow curve that echoes **A**. Existing advances and kerning remain in place.
+The crossbar of **e** has a shallow curve that echoes **A**. Release 1.200 retained the existing advances and kerning.
 
 The italic **l** replaces its hooked entrance with a softly angled cap. Slashed **ł** uses the revised stem and the inherited crossing stroke.
 
 The italic **f** keeps its identifying hook with reduced terminal bulbs. Composite accents and standard ligatures inherit the changed outlines.
 
 These italics remain based on Fraunces. The existing expressive alternates retain their earlier shapes and can differ from the revised default letters.
+
+## Spacing in 1.300
+
+The upright **l** foot now has a shorter reach. Its advance is 105 units narrower on a 2,000-unit em.
+
+That change reduces the white pocket between the tall stem and the next letter. Accents and l-ending ligatures inherit the revised width.
+
+Additional kerning brings rounded neighbors 24 units closer after **l**, **fl**, and **ffl**. Selected rounded letters before **l** move 12 units closer.
+
+These rules include corresponding accented forms and slashed **ł**. The existing italic outlines remain unchanged.
+
+The [spacing comparison](spacing-comparison.png) shows the font revision across all 4 upright weights. Its logo example also uses small optical adjustments between selected letters.
+
+Those logo adjustments belong to the artwork. They do not change the spacing of unrelated words in the font.
 
 ## Added behavior
 

@@ -1,0 +1,50 @@
+{
+  "engine_versions": {
+    "freetype": "2.12.0",
+    "uharfbuzz": "0.57.0",
+    "pillow": "13.0.0"
+  },
+  "opacity_threshold": 160,
+  "font_hashes": {
+    "MiracleGrove-Bold.ttf": "9928dbf192295432aea74af1fd0c68286b87f61b6ffc61b7e689599d393d3bf7",
+    "MiracleGrove-BoldItalic.ttf": "bbd7d8a973014d0fa00a67624be056e09e5ec422cd53632282459bba7851891b",
+    "MiracleGrove-Medium.ttf": "4592faa78ea1cd87eade7ee8ce26ba01fb374166cb597b6ce07adecd98782c72",
+    "MiracleGrove-MediumItalic.ttf": "2517f53c6443f277bce183e914ba6a7caeb9d47cda8f99e39919d2decfbeb811",
+    "MiracleGrove-Regular.ttf": "5a42872243a4d98017493657a746875a714ac51edc7db511e77cc1f88251064d",
+    "MiracleGrove-RegularItalic.ttf": "1073c9c892985ab2754009af6809bb1f29e0441d72b9c8b94b7aea7444b2c2aa",
+    "MiracleGrove-SemiBold.ttf": "858698a56a64acc2d3283548f68a9c433801943cf7775b63fd904cc081d29139",
+    "MiracleGrove-SemiBoldItalic.ttf": "da569a1d272749045a423dacced12a345da4b15e9680e621da61aa5b2106e4b0"
+  },
+  "baseline_hashes": {
+    "MiracleGrove-Bold.ttf": "d570ea99bcbae301fb60ba6907bcb1eb97fe29d044ba5d4bdd2ff7126796e4fb",
+    "MiracleGrove-BoldItalic.ttf": "705734e6bc1069bc7ebe69a4e452dd44b9f024a254f47d50d56ddc69448f14fc",
+    "MiracleGrove-Medium.ttf": "31631ef90d8974e8487caf7ee4fa8030aa264f032cfcac3f8791d3f79b489319",
+    "MiracleGrove-MediumItalic.ttf": "84944a28017d9cd775c8d5ac1d61aa93c9b55128fc37f6e671d7202e05929d86",
+    "MiracleGrove-Regular.ttf": "f45165709935f82661ff1c300a1560bc6dff3c7a0c60ff8b09f2297a070e7b43",
+    "MiracleGrove-RegularItalic.ttf": "49206ab864448f05347951499acb9228d294328c70c199c44135556563267b96",
+    "MiracleGrove-SemiBold.ttf": "efe3ba6c8a8d430e9eb455f2ecff1f13b89d3e32606de4f22cb25da043b43ba5",
+    "MiracleGrove-SemiBoldItalic.ttf": "e07039c80ac79729cbf2b9ebbadc8e724e744ee37379999423c61eaacc8fd3f7"
+  },
+  "sizes_px": [
+    16,
+    24,
+    36,
+    48,
+    72,
+    112
+  ],
+  "unique_entries": 229,
+  "shaping_runs": 7328,
+  "raster_runs": 10992,
+  "new_contacts": [],
+  "styles": [
+    "MiracleGrove-Bold",
+    "MiracleGrove-BoldItalic",
+    "MiracleGrove-Medium",
+    "MiracleGrove-MediumItalic",
+    "MiracleGrove-Regular",
+    "MiracleGrove-RegularItalic",
+    "MiracleGrove-SemiBold",
+    "MiracleGrove-SemiBoldItalic"
+  ]
+}

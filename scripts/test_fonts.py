@@ -13,7 +13,7 @@ def check_fonts(directory,compare=None):
   f=TTFont(path,checkChecksums=2);cmap=f.getBestCmap()
   assert len(cmap)==639 and len(f.getGlyphOrder())==710
   assert all(t in f for t in ('GPOS','GSUB','GDEF','STAT')) and 'fvar' not in f
-  assert f['OS/2'].fsType==0 and f['name'].getDebugName(5)=='Version 1.200'
+  assert f['OS/2'].fsType==0 and f['name'].getDebugName(5)=='Version 1.300'
   ps=f['name'].getDebugName(6);assert ps not in names;names.add(ps)
   cmaps.append(set(cmap));metrics.append(tuple(getattr(f['OS/2'],k) for k in ('sTypoAscender','sTypoDescender','sTypoLineGap','usWinAscent','usWinDescent')))
   for gn in f.getGlyphOrder():
@@ -27,6 +27,22 @@ def check_fonts(directory,compare=None):
    return [(i.codepoint,p.x_advance,p.x_offset,p.y_offset) for i,p in zip(b.glyph_infos,b.glyph_positions)]
   for s in SAMPLES:assert all(g[0] for g in shape(s)),(path.name,s)
   for s in ['áéíóúüñ','ÁÉÍÓÚÜÑ','ĺḷḻ','ČšŽç']:assert shape(s)==shape(unicodedata.normalize('NFD',s))
+  corpus=json.loads((ROOT/'qa/spacing-corpus.json').read_text(encoding='utf-8'))
+  for s in set(word for group in corpus.values() for word in group):
+   for features in ({},{'kern':0},{'liga':0},{'ss01':1}):
+    shaped=shape(s,features)
+    assert all(g[0] for g in shaped),(path.name,s,features)
+    assert shaped==shape(unicodedata.normalize('NFD',s),features),(path.name,s,features)
+  if not f['OS/2'].fsSelection&1:
+   for s in ['le','lé','ĺe','ḷé','łe','fle','ffle']:
+    on=shape(s,{'kern':1});off=shape(s,{'kern':0})
+    assert sum(v[1] for v in off)-sum(v[1] for v in on)==24,(path.name,s)
+    # Bounds are deliberately stricter than contour-level collision checks.
+    for left,right in zip(on,on[1:]):
+     lg=f['glyf'][f.getGlyphOrder()[left[0]]];rg=f['glyf'][f.getGlyphOrder()[right[0]]]
+     assert left[1]+right[2]+rg.xMin-left[2]-lg.xMax>0,(path.name,s)
+   for s in ['al','ál','cĺ','eḷ']:
+    assert sum(v[1] for v in shape(s,{'kern':0}))-sum(v[1] for v in shape(s,{'kern':1}))==12,(path.name,s)
   assert len({shape(c,{'tnum':1})[0][1] for c in '0123456789'})==1
   assert len({shape(c,{'pnum':1})[0][1] for c in '0123456789'})>1
   assert len(shape('ffi'))<len(shape('ffi',{'liga':0}))

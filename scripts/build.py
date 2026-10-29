@@ -5,6 +5,7 @@ Font software and build sources: SIL Open Font License 1.1; see OFL.txt.
 import argparse
 import hashlib
 import json
+import unicodedata
 from pathlib import Path
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
@@ -17,7 +18,7 @@ from fontTools.ttLib.tables import otTables
 from fontTools import agl
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.200"
+VERSION = "1.300"
 # Fixed OpenType epoch timestamp (2026-10-27 00:00:00 UTC) for reproducible output.
 BUILD_TIMESTAMP = 3875904000
 STYLES = [("Regular",400,450),("Medium",500,550),("SemiBold",600,650),("Bold",700,750)]
@@ -38,15 +39,15 @@ def make_base(label, weight, sourceweight, italic):
      g=f['glyf']['l']; pts=list(g.coordinates); assert len(pts)==40
      right,top=pts[0]; left=pts[23][0]
      p=TTGlyphPen(None); p.moveTo((right,top)); p.lineTo((right,320))
-     p.qCurveTo((right,115),(right+120,115));p.qCurveTo((right+170,115),(right+210,145))
-     p.qCurveTo((right+255,160),(right+265,115));p.qCurveTo((right+280,60),(right+220,25))
-     p.qCurveTo((right+120,-40),(right+30,-40));p.qCurveTo((left,-40),(left,245))
+     p.qCurveTo((right,115),(right+78,115));p.qCurveTo((right+111,115),(right+137,145))
+     p.qCurveTo((right+166,160),(right+172,115));p.qCurveTo((right+182,60),(right+143,25))
+     p.qCurveTo((right+78,-40),(right+20,-40));p.qCurveTo((left,-40),(left,245))
      p.lineTo(pts[23])
      # Quadratic runs from the original stem up around the angled top.
      p.qCurveTo(*pts[24:27]);p.qCurveTo(*pts[27:31]);p.qCurveTo(*pts[31:34]);p.lineTo(pts[34])
      p.qCurveTo(*pts[35:38]);p.qCurveTo(*pts[38:],pts[0]);p.closePath()
      f['glyf']['l']=p.glyph();f['glyf']['l'].recalcBounds(f['glyf'])
-     old=f['hmtx']['l'][0];new=round(right+330);delta=new-old
+     old=f['hmtx']['l'][0];new=round(right+225);delta=new-old
      f['hmtx']['l']=(new,f['glyf']['l'].xMin)
      for gn in f.getGlyphOrder():
       gg=f['glyf'][gn]
@@ -140,6 +141,33 @@ def refine_alphabet(f):
             if target is not None:current=target
         f['glyf'][gn]=p.glyph()
 
+def add_returning_l_kerning(f):
+    """Supplement inherited kerning for the changed upright l silhouette."""
+    cmap=f.getBestCmap()
+    def family(chars):
+        result={gn for cp,gn in cmap.items()
+                if unicodedata.normalize('NFD',chr(cp))[0] in chars}
+        result.update(gn for gn in f.getGlyphOrder() if gn.split('.')[0] in chars)
+        return sorted(result)
+    lforms=sorted(set(family('l'))|{'lslash'})
+    ending=sorted(set(lforms)|{'fl','f_f_l'})
+    rounded=family('cdeoq')
+    incoming=family('aceo')
+    fea=('feature kern {\n'
+         f'pos [{" ".join(ending)}] [{" ".join(rounded)}] -24;\n'
+         f'pos [{" ".join(incoming)}] [{" ".join(lforms)}] -12;\n'
+         '} kern;')
+    temp=TTFont();temp.setGlyphOrder(f.getGlyphOrder())
+    addOpenTypeFeaturesFromString(temp,fea)
+    table=f['GPOS'].table;offset=len(table.LookupList.Lookup)
+    table.LookupList.Lookup.extend(temp['GPOS'].table.LookupList.Lookup)
+    table.LookupList.LookupCount=len(table.LookupList.Lookup)
+    additions=list(range(offset,table.LookupList.LookupCount))
+    for record in table.FeatureList.FeatureRecord:
+        if record.FeatureTag=='kern':
+            record.Feature.LookupListIndex.extend(additions)
+            record.Feature.LookupCount=len(record.Feature.LookupListIndex)
+
 def refine_font(f):
     italic=bool(f['OS/2'].fsSelection&1);cmap=f.getBestCmap()
     def encode(cp,gn):
@@ -199,6 +227,7 @@ def refine_font(f):
      if len(uni)==1 and ord(uni) not in cmap and not 0xE000<=ord(uni)<=0xF8FF:
       encode(ord(uni),gn);added.append(f'U+{ord(uni):04X}')
     encode(0x2010,'hyphen')
+    if not italic:add_returning_l_kerning(f)
     for cp,gn,width in [(0x2007,'figureSpace',max(f['hmtx'][cmap[ord(c)]][0] for c in '0123456789')),(0x202f,'narrowNoBreakSpace',round(f['hmtx']['space'][0]*.6))]:
      pen=TTGlyphPen(None);f['glyf'][gn]=pen.glyph();f['hmtx'][gn]=(width,0);encode(cp,gn)
     # Equal-width figures for donor totals and numerical columns.

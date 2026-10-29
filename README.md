@@ -32,7 +32,7 @@ Use weights **400**, **500**, **600**, or **700**. Set `font-style: italic` for 
 
 ## What you get
 
-| Detail | Release 1.200 |
+| Detail | Release 1.300 |
 |---|---|
 | Styles | Regular, Medium, SemiBold, Bold, with matching italics |
 | Formats | Static TrueType and WOFF2 |
@@ -52,6 +52,8 @@ This edition selects a fixed optical size and softness. The returning upright **
 
 Version **1.200** gives the italic **l** an angled cap and reduces the bulbs of **f**. Related accents and ligatures follow those changes.
 
+Version **1.300** shortens the upright **l** foot and improves its spacing with rounded neighbors, including related accents and ligatures.
+
 Tabular figures and ligature caret positions extend its typesetting features. [The design notes](documentation/design.md) explain what this edition inherits from Fraunces.
 
 Salman Ravoof maintains this derivative through SalTypes. Development and testing were assisted by OpenAI Codex. This project is independent of Undercase Type.
@@ -63,6 +65,8 @@ Miracle Grove works best at display sizes. Proof your layout before using it for
 It does not cover Arabic, Indic, or CJK scripts. It has no variable font, small caps, or arbitrary-fraction feature.
 
 The release passed FontBakery's Universal profile without failures or errors. Remaining warnings and application tests are listed in [the quality report](documentation/quality.md).
+
+You can compare difficult words in [the spacing proof](https://saltypes.github.io/miracle-grove/spacing-proof.html). [The spacing report](documentation/spacing.md) explains the tests and their limits.
 
 ## Build and contribute
 

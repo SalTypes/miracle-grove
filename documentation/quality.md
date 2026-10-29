@@ -1,6 +1,6 @@
 # What has been tested
 
-Release **1.200** passed FontBakery's Universal profile with **564 passes**, **0 failures**, and **0 errors** on Windows with Python 3.13.
+Release **1.300** passed FontBakery's Universal profile with **564 passes**, **0 failures**, and **0 errors** on Windows with Python 3.13.
 
 The run also produced **40 warnings**, **298 skipped checks**, and **30 informational results**. A skipped check does not count as a pass.
 
@@ -27,6 +27,14 @@ The suite checks equal advances for tabular digits and verifies that kerning cha
 Desktop and web files must have equivalent character maps and core font tables. Font names must be unique, and line metrics must agree across styles.
 
 Two local builds produced byte-identical font files. The repository's CI repeats this test on Windows and Linux; check the current workflow result for its status.
+
+## Check revised spacing
+
+Release 1.300 adds 44 spacing cases across the 4 upright weights. They check kerning for plain and accented l forms, plus fl and ffl ligatures.
+
+The outgoing cases also require positive bounding-box clearance between neighboring outlines. This catches overlap in those samples; visual proofs remain necessary.
+
+The expanded study covers 229 distinct entries at 6 sizes in all 8 styles. [The spacing report](spacing.md) records its methods and limits.
 
 ## Check browser behavior
 
